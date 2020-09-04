@@ -4,6 +4,9 @@ import { ContainerInstanceManagementModels } from '@azure/arm-containerinstance'
 import { parse as yamlParse } from 'yaml';
 import { VolumeMount } from '@azure/arm-containerinstance/esm/models';
 
+// TODO: Fix defaults for containers memory and cpu
+// TODO: Fix bug where ports is empty causes error
+
 export class TaskParameters {
     private static taskparams: TaskParameters;
     private _groupName: string;
